@@ -1,0 +1,117 @@
+body {
+    background-image: url(IMG_2951.PNG);
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.todo-wrapper {
+    margin-top: 50px;
+    background-color: rgba(173, 216, 230, 0.5);
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
+.todo-wrapper h1 {
+    margin: 0;
+    color: white;
+}
+
+.todo-wrapper p {
+    font-style: italic;
+    color: #add8e6;
+    margin: 5px 0;
+}
+
+.todo-wrapper ol {
+    margin: 20px 0;
+}
+
+.todo-wrapper ol li {
+    margin: 5px 0;
+    padding: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.todo-wrapper ol li:nth-child(even) {
+    background: rgba(211, 211, 211, 0.5);
+}
+
+.todo-wrapper .completed {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.todo-wrapper .pretty-button {
+    margin: 10px 2px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: #0093D5;
+    border: none;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    font-size: small;
+}
+
+.todo-wrapper .pretty-button:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.todo-wrapper input {
+    padding: 3px 6px;
+}
+
+.todo-wrapper form {
+    display: inline-block;
+}
+
+#control-wrapper {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.todo-wrapper #clear-completed-button {
+    background-color: lightblue;
+    color: white;
+}
+
+.todo-wrapper #empty-button {
+    background-color: darkred;
+    color: white;
+}
+
+.todo-wrapper #save-button {
+    background-color: lightgreen;
+    color: white;
+}
+
+@media only screen and (min-width: 1400px) {
+    .todo-wrapper {
+        width: 50%;
+    }
+
+    .todo-wrapper input {
+        width: 600px;
+    }
+    
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 750px) {
+    .todo-wrapper {
+        width: 75%;
+    }
+
+    .todo-wrapper input {
+        width: 400px;
+    }
+}
